@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:fontFamily="serif-monospace"
+        android:text="এই অ্যাপের সকল বই ইন্টারনেট থেকে নেওয়া।"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="?android:attr/colorBackground"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="127dp"
+        android:layout_weight="10"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="BOOKS"
+        android:textColor="?android:attr/colorAccent"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        tools:textSize="@android:dimen/app_icon_size" />
+
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:text="অ্যাপ সম্পর্কে আপনার মন্তব্য ও বই এর অনুরোধ"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

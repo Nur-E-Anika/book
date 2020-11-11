@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".firstPage">
+
+    <TextView
+        android:id="@+id/booktextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="131dp"
+        android:fontFamily="casual"
+        android:text="GENRE"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="40sp"
+        android:textStyle="bold|italic" />
+
+
+    <EditText
+        android:id="@+id/searchText"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:layout_toStartOf="@+id/searchBtn"
+        android:backgroundTint="@color/browser_actions_title_color"
+        android:backgroundTintMode="src_in"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHighlight="@color/browser_actions_bg_grey"
+        android:textColorLink="@color/cardview_light_background"
+        android:textCursorDrawable="@color/cardview_light_background"
+        android:textIsSelectable="false"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/wtrTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/booktextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:text="WANT TO READ"
+        android:textAppearance="@android:style/TextAppearance.Material.Button"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/favTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wtrTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:fontFamily="casual"
+        android:text="FAVOURITE"
+        android:textAppearance="@android:style/TextAppearance.Material.Button"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/searchBtn"
+        style="@android:style/Widget.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/searchText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="9dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:backgroundTint="@color/colorAccent"
+        android:backgroundTintMode="src_in"
+        android:cropToPadding="false"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+
+</RelativeLayout>
